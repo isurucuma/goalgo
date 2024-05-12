@@ -1,8 +1,8 @@
 package bubble
 
 func Sort(items []int) {
-	for i := 0; i < len(items)-1; i++ {
-		for j := 0; j < len(items)-1-i; j++ {
+	for i := range len(items) - 1 {
+		for j := range len(items) - 1 - i {
 			if items[j] > items[j+1] {
 				swap(items, j)
 			}
